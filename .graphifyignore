@@ -1,0 +1,39 @@
+# Generated code (build output)
+content-components/ui_dataclasses.js
+
+# Assistant / IDE — graphify-generated snippets only (avoid ingesting instructions as corpus)
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.cursor/rules/graphify.mdc
+.kiro/skills/graphify/
+.kiro/steering/graphify.md
+.agents/rules/graphify.md
+.agents/workflows/graphify.md
+.opencode/
+.gemini/
+.claude/
+
+# Dependencies & packaging
+node_modules/
+web-ext-artifacts/
+
+# Vendored minified bundles (tokenizer + polyfill)
+lib/
+
+# Build / tooling noise at repo root
+manifest.json
+
+# graphify outputs — keep committed graph/report optional; skip volatile paths
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/cost.json
+graphify-out/transcripts/
+graphify-out/memory/
+
+# IDE
+.vscode/
+.idea/
+
+# Design sources / binaries (low signal for graph)
+*.psd
