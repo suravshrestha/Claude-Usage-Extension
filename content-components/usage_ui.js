@@ -1,5 +1,5 @@
 /* global CONFIG, Log, ProgressBar, sendBackgroundMessage, getActiveOrgId,
-   setupTooltip, getResetTimeHTML, sleep, isMobileView, isCodePage, UsageData, isPeakHours,
+   setupTooltip, getResetTimeHTML, sleep, isMobileView, isCodePage, UsageData,
    RED_WARNING, BLUE_HIGHLIGHT, SUCCESS_GREEN, SELECTORS, LayoutManager, mountToAnchor */
 'use strict';
 
@@ -103,7 +103,6 @@ class UsageSection {
 
 			// Override tooltip with estimated token values
 			let cap = CONFIG.ESTIMATED_CAPS?.[usageData.subscriptionTier]?.[limit.key];
-			if (limit.key === 'session' && isPeakHours()) cap = cap / CONFIG.PEAK_SESSION_MULTIPLIER;
 			if (cap) {
 				const used = Math.round((limit.percentage / 100) * cap);
 				progressBar.tooltip.textContent = `${used.toLocaleString()} / ${cap.toLocaleString()} tokens (${limit.percentage.toFixed(0)}%)`;
@@ -196,6 +195,7 @@ class UsageUI {
 			usageData: null,
 			currentModel: null,
 			refreshedExpiredLimits: new Set(), // track which expired limits we've already requested a refresh for
+			isRefreshing: false,
 		};
 
 		// Element references
@@ -213,7 +213,6 @@ class UsageUI {
 
 		this.lastUpdateTime = 0;
 		this.updateInterval = 1000;
-		this.wasPeakHours = isPeakHours();
 
 		this.setupMessageListener();
 		this.init();
@@ -290,8 +289,29 @@ class UsageUI {
 		title.textContent = 'Usage';
 		title.className = 'text-text-500 pb-2 mt-1 text-xs select-none pl-2 pr-2';
 
+		const actions = document.createElement('div');
+		actions.className = 'ut-header-actions';
+
+		const refreshButton = document.createElement('button');
+		refreshButton.className = 'ut-button ut-button-icon ut-refresh-button hover:bg-bg-400 hover:text-text-100';
+		refreshButton.type = 'button';
+		refreshButton.setAttribute('aria-label', 'Refresh usage');
+		refreshButton.title = 'Refresh usage';
+		refreshButton.style.color = BLUE_HIGHLIGHT;
+		refreshButton.innerHTML = `
+			<svg class="ut-refresh-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+				<path d="M21 2v6h-6"/>
+				<path d="M21 13a9 9 0 1 1-2.64-6.36L21 8"/>
+			</svg>
+		`;
+
+		refreshButton.addEventListener('click', () => this.refreshUsage(refreshButton));
+
 		const settingsButton = document.createElement('button');
 		settingsButton.className = 'ut-button ut-button-icon hover:bg-bg-400 hover:text-text-100';
+		settingsButton.type = 'button';
+		settingsButton.setAttribute('aria-label', 'Open usage settings');
+		settingsButton.title = 'Open usage settings';
 		settingsButton.style.color = BLUE_HIGHLIGHT;
 		settingsButton.style.padding = '0';
 		settingsButton.style.width = '1rem';
@@ -310,7 +330,9 @@ class UsageUI {
 		});
 
 		header.appendChild(title);
-		header.appendChild(settingsButton);
+		actions.appendChild(refreshButton);
+		actions.appendChild(settingsButton);
+		header.appendChild(actions);
 		return header;
 	}
 
@@ -353,25 +375,18 @@ class UsageUI {
 		rightContainer.id = 'ut-stat-right';
 		rightContainer.className = 'ut-row';
 
-		// Peak hours indicator
-		const peakIndicator = document.createElement('div');
-		peakIndicator.className = 'text-text-400 text-sm';
-		peakIndicator.style.cssText = `color: ${RED_WARNING}; font-weight: bold; margin-right: 8px; display: none; user-select: none;`;
-		peakIndicator.textContent = 'PEAK';
-
 		// Reset time display
 		const resetDisplay = document.createElement('div');
 		resetDisplay.className = 'text-text-400 text-sm';
 		if (!isMobileView()) resetDisplay.style.marginRight = '8px';
 
-		rightContainer.appendChild(peakIndicator);
 		rightContainer.appendChild(resetDisplay);
 
 		statLine.appendChild(leftContainer);
 		statLine.appendChild(spacer);
 		statLine.appendChild(rightContainer);
 
-		return { statLine, usageDisplay, progressBar, peakIndicator, resetDisplay };
+		return { statLine, usageDisplay, progressBar, resetDisplay };
 	}
 
 	createTooltips() {
@@ -386,26 +401,15 @@ class UsageUI {
 			return tooltip;
 		};
 
-		// Convert peak hours (1pm-7pm GMT) to user's local timezone
-		const formatLocal = (utcHour) => {
-			const d = new Date();
-			d.setUTCHours(utcHour, 0, 0, 0);
-			return d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-		};
-		const peakStart = formatLocal(13);
-		const peakEnd = formatLocal(19);
-
 		return {
 			usage: create("How much of your 5-hour quota you've used"),
 			timer: create('When your 5-hour usage will reset'),
-			peak: create(`Session limit reduced during peak times:\n${peakStart} - ${peakEnd}, weekdays`),
 		};
 	}
 
 	attachTooltips() {
 		setupTooltip(this.elements.chat.usageDisplay, this.elements.tooltips.usage);
 		setupTooltip(this.elements.chat.resetDisplay, this.elements.tooltips.timer);
-		setupTooltip(this.elements.chat.peakIndicator, this.elements.tooltips.peak);
 	}
 
 	// ========== MOUNT (attach to page) ==========
@@ -437,7 +441,7 @@ class UsageUI {
 
 	renderChatArea() {
 		const { usageData } = this.state;
-		const { usageDisplay, progressBar, peakIndicator, resetDisplay } = this.elements.chat;
+		const { usageDisplay, progressBar, resetDisplay } = this.elements.chat;
 
 		if (!usageData) return;
 
@@ -454,7 +458,6 @@ class UsageUI {
 
 			const color = pct >= CONFIG.WARNING_THRESHOLD * 100 ? RED_WARNING : BLUE_HIGHLIGHT;
 			usageDisplay.innerHTML = `Extra: <span style="color: ${color}">${pct.toFixed(0)}%</span>`;
-			peakIndicator.style.display = 'none';
 
 			if (!isMobileView() && progressBar) {
 				progressBar.updateProgress(pct, 100);
@@ -474,7 +477,6 @@ class UsageUI {
 		// Normal session display
 		const color = session.percentage >= CONFIG.WARNING_THRESHOLD * 100 ? RED_WARNING : BLUE_HIGHLIGHT;
 		usageDisplay.innerHTML = `Session: <span style="color: ${color}">${session.percentage.toFixed(0)}%</span>`;
-		peakIndicator.style.display = isPeakHours() ? '' : 'none';
 
 		// Progress bar (desktop only)
 		if (!isMobileView() && progressBar) {
@@ -482,7 +484,6 @@ class UsageUI {
 
 			// Override tooltip with estimated token values
 			let cap = CONFIG.ESTIMATED_CAPS?.[usageData.subscriptionTier]?.session;
-			if (isPeakHours()) cap = cap / CONFIG.PEAK_SESSION_MULTIPLIER;
 			if (cap) {
 				const used = Math.round((session.percentage / 100) * cap);
 				progressBar.tooltip.textContent = `${used.toLocaleString()} / ${cap.toLocaleString()} tokens (${session.percentage.toFixed(0)}%)`;
@@ -522,6 +523,26 @@ class UsageUI {
 
 	// ========== MESSAGE HANDLERS ==========
 
+	async refreshUsage(button) {
+		if (this.state.isRefreshing) return;
+
+		this.state.isRefreshing = true;
+		button.disabled = true;
+		button.classList.add('ut-refresh-button--loading');
+		button.setAttribute('aria-busy', 'true');
+
+		try {
+			await sendBackgroundMessage({ type: 'requestData' });
+		} catch (error) {
+			await Log('error', 'UsageUI: Manual refresh failed:', error);
+		} finally {
+			this.state.isRefreshing = false;
+			button.disabled = false;
+			button.classList.remove('ut-refresh-button--loading');
+			button.removeAttribute('aria-busy');
+		}
+	}
+
 	handleUsageUpdate(usageDataJSON) {
 		if (!this.uiReady) {
 			Log('UsageUI: Not ready, queueing update');
@@ -560,15 +581,6 @@ class UsageUI {
 		}
 	}
 
-	checkPeakHoursChange() {
-		const peak = isPeakHours();
-		if (peak !== this.wasPeakHours) {
-			this.wasPeakHours = peak;
-			this.renderChatArea();
-			this.renderSidebar();
-		}
-	}
-
 	// ========== UPDATE LOOP ==========
 
 	startUpdateLoop() {
@@ -578,7 +590,6 @@ class UsageUI {
 				this.renderResetTimes();
 				this.checkExpiredLimits();
 				this.checkModelChange();
-				this.checkPeakHoursChange();
 				this.mountSidebar();
 				this.mountChatArea();
 			}
