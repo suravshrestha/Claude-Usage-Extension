@@ -26,7 +26,7 @@
       "source_file": "run-android.ps1",
       "source_location": "L1",
       "id": "run_android_ps1",
-      "community": 12,
+      "community": 11,
       "norm_label": "run-android.ps1"
     },
     {
@@ -35,7 +35,7 @@
       "source_file": "popup.js",
       "source_location": "L1",
       "id": "popup_js",
-      "community": 13,
+      "community": 12,
       "norm_label": "popup.js"
     },
     {
@@ -44,7 +44,7 @@
       "source_file": "background.js",
       "source_location": "L1",
       "id": "background_js",
-      "community": 5,
+      "community": 4,
       "norm_label": "background.js"
     },
     {
@@ -52,8 +52,8 @@
       "file_type": "code",
       "source_file": "background.js",
       "source_location": "L46",
-      "id": "background_runonceinitialized",
-      "community": 5,
+      "id": "claude_usage_extension_background_runonceinitialized",
+      "community": 4,
       "norm_label": "runonceinitialized()"
     },
     {
@@ -61,197 +61,215 @@
       "file_type": "code",
       "source_file": "background.js",
       "source_location": "L103",
-      "id": "background_handlealarm",
-      "community": 5,
+      "id": "claude_usage_extension_background_handlealarm",
+      "community": 4,
       "norm_label": "handlealarm()"
     },
     {
       "label": "checkResetNotifications()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L111",
-      "id": "background_checkresetnotifications",
-      "community": 5,
+      "source_location": "L117",
+      "id": "claude_usage_extension_background_checkresetnotifications",
+      "community": 4,
       "norm_label": "checkresetnotifications()"
     },
     {
       "label": "Log()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L188",
-      "id": "background_log",
-      "community": 5,
+      "source_location": "L194",
+      "id": "claude_usage_extension_background_log",
+      "community": 4,
       "norm_label": "log()"
     },
     {
       "label": "logError()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L192",
-      "id": "background_logerror",
-      "community": 5,
+      "source_location": "L198",
+      "id": "claude_usage_extension_background_logerror",
+      "community": 4,
       "norm_label": "logerror()"
     },
     {
       "label": "requestActiveOrgId()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L210",
-      "id": "background_requestactiveorgid",
-      "community": 5,
+      "source_location": "L216",
+      "id": "claude_usage_extension_background_requestactiveorgid",
+      "community": 4,
       "norm_label": "requestactiveorgid()"
     },
     {
       "label": "updateAllTabsWithUsage()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L248",
-      "id": "background_updatealltabswithusage",
-      "community": 5,
+      "source_location": "L254",
+      "id": "claude_usage_extension_background_updatealltabswithusage",
+      "community": 4,
       "norm_label": "updatealltabswithusage()"
+    },
+    {
+      "label": "refreshUsageForOrg()",
+      "file_type": "code",
+      "source_file": "background.js",
+      "source_location": "L289",
+      "id": "claude_usage_extension_background_refreshusagefororg",
+      "community": 4,
+      "norm_label": "refreshusagefororg()"
+    },
+    {
+      "label": "scheduleUsageRefreshAlarm()",
+      "file_type": "code",
+      "source_file": "background.js",
+      "source_location": "L314",
+      "id": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "community": 4,
+      "norm_label": "scheduleusagerefreshalarm()"
     },
     {
       "label": "updateTabWithConversationData()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L272",
-      "id": "background_updatetabwithconversationdata",
-      "community": 5,
+      "source_location": "L330",
+      "id": "claude_usage_extension_background_updatetabwithconversationdata",
+      "community": 4,
       "norm_label": "updatetabwithconversationdata()"
     },
     {
       "label": "openDebugPage()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L316",
-      "id": "background_opendebugpage",
-      "community": 5,
+      "source_location": "L374",
+      "id": "claude_usage_extension_background_opendebugpage",
+      "community": 4,
       "norm_label": "opendebugpage()"
     },
     {
       "label": "requestData()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L326",
-      "id": "background_requestdata",
-      "community": 5,
+      "source_location": "L384",
+      "id": "claude_usage_extension_background_requestdata",
+      "community": 4,
       "norm_label": "requestdata()"
     },
     {
       "label": "interceptedRequest()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L375",
-      "id": "background_interceptedrequest",
-      "community": 5,
+      "source_location": "L433",
+      "id": "claude_usage_extension_background_interceptedrequest",
+      "community": 4,
       "norm_label": "interceptedrequest()"
     },
     {
       "label": "interceptedResponse()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L385",
-      "id": "background_interceptedresponse",
-      "community": 5,
+      "source_location": "L443",
+      "id": "claude_usage_extension_background_interceptedresponse",
+      "community": 4,
       "norm_label": "interceptedresponse()"
     },
     {
       "label": "getTotalTokensTracked()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L395",
-      "id": "background_gettotaltokenstracked",
-      "community": 5,
+      "source_location": "L453",
+      "id": "claude_usage_extension_background_gettotaltokenstracked",
+      "community": 4,
       "norm_label": "gettotaltokenstracked()"
     },
     {
       "label": "handleMessageFromContent()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L401",
-      "id": "background_handlemessagefromcontent",
-      "community": 0,
+      "source_location": "L459",
+      "id": "claude_usage_extension_background_handlemessagefromcontent",
+      "community": 4,
       "norm_label": "handlemessagefromcontent()"
     },
     {
       "label": "parseRequestBody()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L409",
-      "id": "background_parserequestbody",
-      "community": 5,
+      "source_location": "L467",
+      "id": "claude_usage_extension_background_parserequestbody",
+      "community": 4,
       "norm_label": "parserequestbody()"
     },
     {
       "label": "processResponse()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L440",
-      "id": "background_processresponse",
-      "community": 5,
+      "source_location": "L498",
+      "id": "claude_usage_extension_background_processresponse",
+      "community": 4,
       "norm_label": "processresponse()"
     },
     {
       "label": "debugLogMessageCost()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L518",
-      "id": "background_debuglogmessagecost",
-      "community": 5,
+      "source_location": "L576",
+      "id": "claude_usage_extension_background_debuglogmessagecost",
+      "community": 4,
       "norm_label": "debuglogmessagecost()"
     },
     {
       "label": "logUsageDelta()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L569",
-      "id": "background_logusagedelta",
-      "community": 5,
+      "source_location": "L627",
+      "id": "claude_usage_extension_background_logusagedelta",
+      "community": 4,
       "norm_label": "logusagedelta()"
     },
     {
       "label": "scheduleResetNotifications()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L599",
-      "id": "background_scheduleresetnotifications",
-      "community": 5,
+      "source_location": "L657",
+      "id": "claude_usage_extension_background_scheduleresetnotifications",
+      "community": 4,
       "norm_label": "scheduleresetnotifications()"
     },
     {
       "label": "onBeforeRequestHandler()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L619",
-      "id": "background_onbeforerequesthandler",
-      "community": 5,
+      "source_location": "L677",
+      "id": "claude_usage_extension_background_onbeforerequesthandler",
+      "community": 4,
       "norm_label": "onbeforerequesthandler()"
     },
     {
       "label": "onCompletedHandler()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L694",
-      "id": "background_oncompletedhandler",
-      "community": 5,
+      "source_location": "L752",
+      "id": "claude_usage_extension_background_oncompletedhandler",
+      "community": 4,
       "norm_label": "oncompletedhandler()"
     },
     {
       "label": "processNextTask()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L732",
-      "id": "background_processnexttask",
-      "community": 5,
+      "source_location": "L790",
+      "id": "claude_usage_extension_background_processnexttask",
+      "community": 4,
       "norm_label": "processnexttask()"
     },
     {
       "label": "electronUsagePoll()",
       "file_type": "code",
       "source_file": "background.js",
-      "source_location": "L764",
-      "id": "background_electronusagepoll",
-      "community": 5,
+      "source_location": "L822",
+      "id": "claude_usage_extension_background_electronusagepoll",
+      "community": 4,
       "norm_label": "electronusagepoll()"
     },
     {
@@ -449,7 +467,7 @@
       "source_file": "bg-components/claude-api.js",
       "source_location": "L53",
       "id": "claude_api_claudeapi_getconversation",
-      "community": 5,
+      "community": 3,
       "norm_label": ".getconversation()"
     },
     {
@@ -476,7 +494,7 @@
       "source_file": "bg-components/claude-api.js",
       "source_location": "L69",
       "id": "claude_api_claudeapi_getusagedata",
-      "community": 5,
+      "community": 3,
       "norm_label": ".getusagedata()"
     },
     {
@@ -764,7 +782,7 @@
       "source_file": "bg-components/utils.js",
       "source_location": "L311",
       "id": "bg_components_utils_storedmap_set",
-      "community": 7,
+      "community": 0,
       "norm_label": ".set()"
     },
     {
@@ -854,7 +872,7 @@
       "source_file": "bg-components/utils.js",
       "source_location": "L403",
       "id": "bg_components_utils_sendtabmessage",
-      "community": 5,
+      "community": 4,
       "norm_label": "sendtabmessage()"
     },
     {
@@ -899,7 +917,7 @@
       "source_file": "content-components/electron_reciever.js",
       "source_location": "L1",
       "id": "content_components_electron_reciever_js",
-      "community": 7,
+      "community": 1,
       "norm_label": "electron_reciever.js"
     },
     {
@@ -908,7 +926,7 @@
       "source_file": "content-components/electron_reciever.js",
       "source_location": "L4",
       "id": "electron_reciever_initelectronreceiver",
-      "community": 7,
+      "community": 1,
       "norm_label": "initelectronreceiver()"
     },
     {
@@ -917,7 +935,7 @@
       "source_file": "content-components/electron_reciever.js",
       "source_location": "L67",
       "id": "electron_reciever_setuprequestinterception",
-      "community": 7,
+      "community": 1,
       "norm_label": "setuprequestinterception()"
     },
     {
@@ -926,7 +944,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L1",
       "id": "content_components_length_ui_js",
-      "community": 1,
+      "community": 2,
       "norm_label": "length_ui.js"
     },
     {
@@ -935,7 +953,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L8",
       "id": "length_ui_lengthui",
-      "community": 1,
+      "community": 2,
       "norm_label": "lengthui"
     },
     {
@@ -944,7 +962,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L9",
       "id": "length_ui_lengthui_constructor",
-      "community": 1,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -953,7 +971,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L40",
       "id": "length_ui_lengthui_setupmessagelisteners",
-      "community": 1,
+      "community": 2,
       "norm_label": ".setupmessagelisteners()"
     },
     {
@@ -962,7 +980,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L56",
       "id": "length_ui_lengthui_init",
-      "community": 1,
+      "community": 2,
       "norm_label": ".init()"
     },
     {
@@ -971,7 +989,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L91",
       "id": "length_ui_lengthui_createlengthcostelements",
-      "community": 1,
+      "community": 2,
       "norm_label": ".createlengthcostelements()"
     },
     {
@@ -980,7 +998,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L108",
       "id": "length_ui_lengthui_createstatlineelements",
-      "community": 1,
+      "community": 2,
       "norm_label": ".createstatlineelements()"
     },
     {
@@ -989,7 +1007,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L117",
       "id": "length_ui_lengthui_createtooltips",
-      "community": 1,
+      "community": 2,
       "norm_label": ".createtooltips()"
     },
     {
@@ -998,7 +1016,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L137",
       "id": "length_ui_lengthui_attachtooltips",
-      "community": 4,
+      "community": 5,
       "norm_label": ".attachtooltips()"
     },
     {
@@ -1007,7 +1025,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L146",
       "id": "length_ui_lengthui_mountlengthcostrow",
-      "community": 4,
+      "community": 6,
       "norm_label": ".mountlengthcostrow()"
     },
     {
@@ -1016,7 +1034,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L161",
       "id": "length_ui_lengthui_mountstatline",
-      "community": 1,
+      "community": 2,
       "norm_label": ".mountstatline()"
     },
     {
@@ -1025,7 +1043,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L181",
       "id": "length_ui_lengthui_renderall",
-      "community": 1,
+      "community": 2,
       "norm_label": ".renderall()"
     },
     {
@@ -1034,7 +1052,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L191",
       "id": "length_ui_lengthui_rendercostandlength",
-      "community": 1,
+      "community": 2,
       "norm_label": ".rendercostandlength()"
     },
     {
@@ -1043,7 +1061,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L258",
       "id": "length_ui_lengthui_renderlengthcostcontainer",
-      "community": 1,
+      "community": 2,
       "norm_label": ".renderlengthcostcontainer()"
     },
     {
@@ -1052,7 +1070,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L280",
       "id": "length_ui_lengthui_rendercachedtime",
-      "community": 1,
+      "community": 2,
       "norm_label": ".rendercachedtime()"
     },
     {
@@ -1061,7 +1079,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L303",
       "id": "length_ui_lengthui_renderestimate",
-      "community": 1,
+      "community": 2,
       "norm_label": ".renderestimate()"
     },
     {
@@ -1070,7 +1088,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L354",
       "id": "length_ui_lengthui_handleusageupdate",
-      "community": 1,
+      "community": 2,
       "norm_label": ".handleusageupdate()"
     },
     {
@@ -1079,7 +1097,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L369",
       "id": "length_ui_lengthui_handleconversationupdate",
-      "community": 1,
+      "community": 2,
       "norm_label": ".handleconversationupdate()"
     },
     {
@@ -1088,7 +1106,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L390",
       "id": "length_ui_lengthui_startupdateloop",
-      "community": 1,
+      "community": 2,
       "norm_label": ".startupdateloop()"
     },
     {
@@ -1097,7 +1115,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L414",
       "id": "length_ui_lengthui_checkconversationchange",
-      "community": 1,
+      "community": 2,
       "norm_label": ".checkconversationchange()"
     },
     {
@@ -1106,7 +1124,7 @@
       "source_file": "content-components/length_ui.js",
       "source_location": "L437",
       "id": "length_ui_lengthui_checkmodelchange",
-      "community": 1,
+      "community": 2,
       "norm_label": ".checkmodelchange()"
     },
     {
@@ -1115,7 +1133,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L1",
       "id": "content_components_notification_card_js",
-      "community": 2,
+      "community": 1,
       "norm_label": "notification_card.js"
     },
     {
@@ -1124,7 +1142,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L7",
       "id": "notification_card_opendebugoverlay",
-      "community": 2,
+      "community": 1,
       "norm_label": "opendebugoverlay()"
     },
     {
@@ -1133,7 +1151,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L32",
       "id": "notification_card_makedraggable",
-      "community": 2,
+      "community": 1,
       "norm_label": "makedraggable()"
     },
     {
@@ -1142,7 +1160,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L114",
       "id": "notification_card_floatingcard",
-      "community": 2,
+      "community": 1,
       "norm_label": "floatingcard"
     },
     {
@@ -1151,7 +1169,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L115",
       "id": "notification_card_floatingcard_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1160,7 +1178,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L123",
       "id": "notification_card_floatingcard_addclosebutton",
-      "community": 2,
+      "community": 1,
       "norm_label": ".addclosebutton()"
     },
     {
@@ -1169,7 +1187,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L133",
       "id": "notification_card_floatingcard_show",
-      "community": 2,
+      "community": 1,
       "norm_label": ".show()"
     },
     {
@@ -1178,7 +1196,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L164",
       "id": "notification_card_floatingcard_makecarddraggable",
-      "community": 2,
+      "community": 1,
       "norm_label": ".makecarddraggable()"
     },
     {
@@ -1187,7 +1205,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L168",
       "id": "notification_card_floatingcard_remove",
-      "community": 2,
+      "community": 1,
       "norm_label": ".remove()"
     },
     {
@@ -1196,7 +1214,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L177",
       "id": "notification_card_buttonnotificationcard",
-      "community": 2,
+      "community": 1,
       "norm_label": "buttonnotificationcard"
     },
     {
@@ -1205,7 +1223,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L178",
       "id": "notification_card_buttonnotificationcard_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1214,7 +1232,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L184",
       "id": "notification_card_buttonnotificationcard_addimagebutton",
-      "community": 2,
+      "community": 1,
       "norm_label": ".addimagebutton()"
     },
     {
@@ -1223,7 +1241,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L205",
       "id": "notification_card_versionnotificationcard",
-      "community": 2,
+      "community": 1,
       "norm_label": "versionnotificationcard"
     },
     {
@@ -1232,7 +1250,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L206",
       "id": "notification_card_versionnotificationcard_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1241,7 +1259,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L214",
       "id": "notification_card_versionnotificationcard_build",
-      "community": 2,
+      "community": 1,
       "norm_label": ".build()"
     },
     {
@@ -1250,7 +1268,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L268",
       "id": "notification_card_donationnotificationcard",
-      "community": 2,
+      "community": 1,
       "norm_label": "donationnotificationcard"
     },
     {
@@ -1259,7 +1277,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L269",
       "id": "notification_card_donationnotificationcard_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1268,7 +1286,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L275",
       "id": "notification_card_donationnotificationcard_build",
-      "community": 2,
+      "community": 1,
       "norm_label": ".build()"
     },
     {
@@ -1277,7 +1295,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L293",
       "id": "notification_card_ratenotificationcard",
-      "community": 2,
+      "community": 1,
       "norm_label": "ratenotificationcard"
     },
     {
@@ -1286,7 +1304,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L294",
       "id": "notification_card_ratenotificationcard_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1295,7 +1313,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L299",
       "id": "notification_card_ratenotificationcard_build",
-      "community": 2,
+      "community": 1,
       "norm_label": ".build()"
     },
     {
@@ -1304,7 +1322,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L329",
       "id": "notification_card_settingscard",
-      "community": 7,
+      "community": 1,
       "norm_label": "settingscard"
     },
     {
@@ -1313,7 +1331,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L332",
       "id": "notification_card_settingscard_constructor",
-      "community": 7,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1322,7 +1340,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L338",
       "id": "notification_card_settingscard_build",
-      "community": 2,
+      "community": 1,
       "norm_label": ".build()"
     },
     {
@@ -1331,7 +1349,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L429",
       "id": "notification_card_settingscard_show",
-      "community": 7,
+      "community": 1,
       "norm_label": ".show()"
     },
     {
@@ -1340,7 +1358,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L453",
       "id": "notification_card_settingscard_remove",
-      "community": 7,
+      "community": 1,
       "norm_label": ".remove()"
     },
     {
@@ -1349,7 +1367,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L462",
       "id": "notification_card_floatingcardsui",
-      "community": 7,
+      "community": 0,
       "norm_label": "floatingcardsui"
     },
     {
@@ -1358,7 +1376,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L463",
       "id": "notification_card_floatingcardsui_constructor",
-      "community": 7,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -1367,7 +1385,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L468",
       "id": "notification_card_floatingcardsui_setupeventlisteners",
-      "community": 7,
+      "community": 0,
       "norm_label": ".setupeventlisteners()"
     },
     {
@@ -1376,7 +1394,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L474",
       "id": "notification_card_floatingcardsui_handletogglesettings",
-      "community": 7,
+      "community": 1,
       "norm_label": ".handletogglesettings()"
     },
     {
@@ -1385,7 +1403,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L486",
       "id": "notification_card_floatingcardsui_checknotifications",
-      "community": 7,
+      "community": 0,
       "norm_label": ".checknotifications()"
     },
     {
@@ -1394,7 +1412,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L493",
       "id": "notification_card_floatingcardsui_checkforversionupdate",
-      "community": 7,
+      "community": 0,
       "norm_label": ".checkforversionupdate()"
     },
     {
@@ -1403,7 +1421,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L529",
       "id": "notification_card_floatingcardsui_checkfordonationmilestone",
-      "community": 7,
+      "community": 0,
       "norm_label": ".checkfordonationmilestone()"
     },
     {
@@ -1412,7 +1430,7 @@
       "source_file": "content-components/notification_card.js",
       "source_location": "L560",
       "id": "notification_card_floatingcardsui_checkforratereminder",
-      "community": 7,
+      "community": 0,
       "norm_label": ".checkforratereminder()"
     },
     {
@@ -1421,7 +1439,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L1",
       "id": "content_components_content_utils_js",
-      "community": 6,
+      "community": 5,
       "norm_label": "content_utils.js"
     },
     {
@@ -1430,7 +1448,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L45",
       "id": "content_utils_log",
-      "community": 6,
+      "community": 2,
       "norm_label": "log()"
     },
     {
@@ -1439,7 +1457,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L111",
       "id": "content_utils_logerror",
-      "community": 6,
+      "community": 5,
       "norm_label": "logerror()"
     },
     {
@@ -1448,7 +1466,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L126",
       "id": "content_utils_sleep",
-      "community": 6,
+      "community": 5,
       "norm_label": "sleep()"
     },
     {
@@ -1457,7 +1475,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L128",
       "id": "content_utils_getconversationid",
-      "community": 1,
+      "community": 2,
       "norm_label": "getconversationid()"
     },
     {
@@ -1466,7 +1484,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L133",
       "id": "content_utils_getactiveorgid",
-      "community": 6,
+      "community": 5,
       "norm_label": "getactiveorgid()"
     },
     {
@@ -1475,7 +1493,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L137",
       "id": "content_utils_sendbackgroundmessage",
-      "community": 6,
+      "community": 5,
       "norm_label": "sendbackgroundmessage()"
     },
     {
@@ -1484,7 +1502,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L162",
       "id": "content_utils_waitforelement",
-      "community": 1,
+      "community": 2,
       "norm_label": "waitforelement()"
     },
     {
@@ -1493,7 +1511,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L175",
       "id": "content_utils_getcurrentmodel",
-      "community": 1,
+      "community": 2,
       "norm_label": "getcurrentmodel()"
     },
     {
@@ -1502,7 +1520,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L191",
       "id": "content_utils_getcurrentmodelversion",
-      "community": 1,
+      "community": 2,
       "norm_label": "getcurrentmodelversion()"
     },
     {
@@ -1511,7 +1529,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L199",
       "id": "content_utils_ismobileview",
-      "community": 4,
+      "community": 6,
       "norm_label": "ismobileview()"
     },
     {
@@ -1520,7 +1538,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L204",
       "id": "content_utils_iscodepage",
-      "community": 1,
+      "community": 2,
       "norm_label": "iscodepage()"
     },
     {
@@ -1529,7 +1547,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L208",
       "id": "content_utils_setuprequestinterception",
-      "community": 6,
+      "community": 1,
       "norm_label": "setuprequestinterception()"
     },
     {
@@ -1538,7 +1556,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L237",
       "id": "content_utils_getresettimehtml",
-      "community": 4,
+      "community": 6,
       "norm_label": "getresettimehtml()"
     },
     {
@@ -1547,7 +1565,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L262",
       "id": "content_utils_setuptooltip",
-      "community": 4,
+      "community": 5,
       "norm_label": "setuptooltip()"
     },
     {
@@ -1556,7 +1574,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L352",
       "id": "content_utils_progressbar",
-      "community": 4,
+      "community": 5,
       "norm_label": "progressbar"
     },
     {
@@ -1565,7 +1583,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L353",
       "id": "content_utils_progressbar_constructor",
-      "community": 4,
+      "community": 5,
       "norm_label": ".constructor()"
     },
     {
@@ -1574,7 +1592,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L380",
       "id": "content_utils_progressbar_updateprogress",
-      "community": 4,
+      "community": 5,
       "norm_label": ".updateprogress()"
     },
     {
@@ -1583,7 +1601,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L387",
       "id": "content_utils_progressbar_setmarker",
-      "community": 4,
+      "community": 5,
       "norm_label": ".setmarker()"
     },
     {
@@ -1592,7 +1610,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L405",
       "id": "content_utils_progressbar_clearmarker",
-      "community": 4,
+      "community": 5,
       "norm_label": ".clearmarker()"
     },
     {
@@ -1601,7 +1619,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L437",
       "id": "content_utils_injectstyles",
-      "community": 6,
+      "community": 5,
       "norm_label": "injectstyles()"
     },
     {
@@ -1610,7 +1628,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L456",
       "id": "content_utils_getsidebarregularanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getsidebarregularanchor()"
     },
     {
@@ -1619,7 +1637,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L479",
       "id": "content_utils_getsidebardesktopanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getsidebardesktopanchor()"
     },
     {
@@ -1628,7 +1646,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L492",
       "id": "content_utils_getchatarearegularanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchatarearegularanchor()"
     },
     {
@@ -1637,7 +1655,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L505",
       "id": "content_utils_getchatareacoworkhomeanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchatareacoworkhomeanchor()"
     },
     {
@@ -1646,7 +1664,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L525",
       "id": "content_utils_getchattitlebeforeshareanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchattitlebeforeshareanchor()"
     },
     {
@@ -1655,7 +1673,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L550",
       "id": "content_utils_getchattitlebeforemenuanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchattitlebeforemenuanchor()"
     },
     {
@@ -1664,7 +1682,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L566",
       "id": "content_utils_getchatlengthcoststatlinefallbackanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchatlengthcoststatlinefallbackanchor()"
     },
     {
@@ -1673,7 +1691,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L580",
       "id": "content_utils_getchatlengthcostanchor",
-      "community": 6,
+      "community": 5,
       "norm_label": "getchatlengthcostanchor()"
     },
     {
@@ -1682,7 +1700,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L691",
       "id": "content_utils_mounttoanchor",
-      "community": 4,
+      "community": 6,
       "norm_label": "mounttoanchor()"
     },
     {
@@ -1691,7 +1709,7 @@
       "source_file": "content-components/content_utils.js",
       "source_location": "L722",
       "id": "content_utils_initextension",
-      "community": 6,
+      "community": 5,
       "norm_label": "initextension()"
     },
     {
@@ -1700,7 +1718,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L1",
       "id": "content_components_usage_ui_js",
-      "community": 2,
+      "community": 1,
       "norm_label": "usage_ui.js"
     },
     {
@@ -1709,7 +1727,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L7",
       "id": "content_components_usage_ui_usagesection",
-      "community": 2,
+      "community": 1,
       "norm_label": "usagesection"
     },
     {
@@ -1718,7 +1736,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L8",
       "id": "content_components_usage_ui_usagesection_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -1727,7 +1745,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L13",
       "id": "content_components_usage_ui_usagesection_createelement",
-      "community": 2,
+      "community": 1,
       "norm_label": ".createelement()"
     },
     {
@@ -1736,7 +1754,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L24",
       "id": "content_components_usage_ui_usagesection_createlimitbar",
-      "community": 2,
+      "community": 1,
       "norm_label": ".createlimitbar()"
     },
     {
@@ -1745,7 +1763,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L70",
       "id": "content_components_usage_ui_usagesection_getlimitlabel",
-      "community": 2,
+      "community": 1,
       "norm_label": ".getlimitlabel()"
     },
     {
@@ -1754,7 +1772,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L81",
       "id": "content_components_usage_ui_usagesection_render",
-      "community": 2,
+      "community": 1,
       "norm_label": ".render()"
     },
     {
@@ -1763,7 +1781,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L159",
       "id": "content_components_usage_ui_usagesection_formatresettime",
-      "community": 2,
+      "community": 1,
       "norm_label": ".formatresettime()"
     },
     {
@@ -1772,7 +1790,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L178",
       "id": "content_components_usage_ui_usagesection_renderresettimes",
-      "community": 2,
+      "community": 1,
       "norm_label": ".renderresettimes()"
     },
     {
@@ -1781,7 +1799,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L191",
       "id": "content_components_usage_ui_usageui",
-      "community": 4,
+      "community": 6,
       "norm_label": "usageui"
     },
     {
@@ -1790,7 +1808,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L192",
       "id": "content_components_usage_ui_usageui_constructor",
-      "community": 4,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -1799,7 +1817,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L223",
       "id": "content_components_usage_ui_usageui_setupmessagelistener",
-      "community": 4,
+      "community": 6,
       "norm_label": ".setupmessagelistener()"
     },
     {
@@ -1808,7 +1826,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L234",
       "id": "content_components_usage_ui_usageui_init",
-      "community": 4,
+      "community": 6,
       "norm_label": ".init()"
     },
     {
@@ -1817,7 +1835,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L264",
       "id": "content_components_usage_ui_usageui_createsidebarelements",
-      "community": 4,
+      "community": 6,
       "norm_label": ".createsidebarelements()"
     },
     {
@@ -1826,7 +1844,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L284",
       "id": "content_components_usage_ui_usageui_createheader",
-      "community": 4,
+      "community": 6,
       "norm_label": ".createheader()"
     },
     {
@@ -1835,7 +1853,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L339",
       "id": "content_components_usage_ui_usageui_createchatelements",
-      "community": 4,
+      "community": 6,
       "norm_label": ".createchatelements()"
     },
     {
@@ -1844,7 +1862,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L392",
       "id": "content_components_usage_ui_usageui_createtooltips",
-      "community": 4,
+      "community": 6,
       "norm_label": ".createtooltips()"
     },
     {
@@ -1853,7 +1871,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L410",
       "id": "content_components_usage_ui_usageui_attachtooltips",
-      "community": 4,
+      "community": 6,
       "norm_label": ".attachtooltips()"
     },
     {
@@ -1862,7 +1880,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L417",
       "id": "content_components_usage_ui_usageui_mountsidebar",
-      "community": 4,
+      "community": 6,
       "norm_label": ".mountsidebar()"
     },
     {
@@ -1871,7 +1889,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L423",
       "id": "content_components_usage_ui_usageui_mountchatarea",
-      "community": 4,
+      "community": 6,
       "norm_label": ".mountchatarea()"
     },
     {
@@ -1880,7 +1898,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L431",
       "id": "content_components_usage_ui_usageui_renderall",
-      "community": 4,
+      "community": 6,
       "norm_label": ".renderall()"
     },
     {
@@ -1889,7 +1907,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L436",
       "id": "content_components_usage_ui_usageui_rendersidebar",
-      "community": 4,
+      "community": 6,
       "norm_label": ".rendersidebar()"
     },
     {
@@ -1898,7 +1916,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L442",
       "id": "content_components_usage_ui_usageui_renderchatarea",
-      "community": 4,
+      "community": 6,
       "norm_label": ".renderchatarea()"
     },
     {
@@ -1907,7 +1925,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L512",
       "id": "content_components_usage_ui_usageui_renderresettimes",
-      "community": 4,
+      "community": 6,
       "norm_label": ".renderresettimes()"
     },
     {
@@ -1916,7 +1934,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L526",
       "id": "content_components_usage_ui_usageui_refreshusage",
-      "community": 6,
+      "community": 5,
       "norm_label": ".refreshusage()"
     },
     {
@@ -1925,7 +1943,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L546",
       "id": "content_components_usage_ui_usageui_handleusageupdate",
-      "community": 4,
+      "community": 6,
       "norm_label": ".handleusageupdate()"
     },
     {
@@ -1934,7 +1952,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L560",
       "id": "content_components_usage_ui_usageui_checkexpiredlimits",
-      "community": 6,
+      "community": 5,
       "norm_label": ".checkexpiredlimits()"
     },
     {
@@ -1943,7 +1961,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L574",
       "id": "content_components_usage_ui_usageui_checkmodelchange",
-      "community": 4,
+      "community": 6,
       "norm_label": ".checkmodelchange()"
     },
     {
@@ -1952,7 +1970,7 @@
       "source_file": "content-components/usage_ui.js",
       "source_location": "L586",
       "id": "content_components_usage_ui_usageui_startupdateloop",
-      "community": 4,
+      "community": 6,
       "norm_label": ".startupdateloop()"
     },
     {
@@ -1961,7 +1979,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L1",
       "id": "shared_dataclasses_js",
-      "community": 1,
+      "community": 2,
       "norm_label": "dataclasses.js"
     },
     {
@@ -1970,7 +1988,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L6",
       "id": "shared_dataclasses_usagedata",
-      "community": 8,
+      "community": 7,
       "norm_label": "usagedata"
     },
     {
@@ -1979,7 +1997,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L7",
       "id": "shared_dataclasses_usagedata_constructor",
-      "community": 8,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -1988,7 +2006,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L21",
       "id": "shared_dataclasses_usagedata_fromapiresponse",
-      "community": 8,
+      "community": 7,
       "norm_label": ".fromapiresponse()"
     },
     {
@@ -1997,7 +2015,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L48",
       "id": "shared_dataclasses_usagedata_getestimatedtokensremaining",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getestimatedtokensremaining()"
     },
     {
@@ -2006,7 +2024,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L59",
       "id": "shared_dataclasses_usagedata_getlimitingfactor",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getlimitingfactor()"
     },
     {
@@ -2015,7 +2033,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L82",
       "id": "shared_dataclasses_usagedata_getactivelimits",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getactivelimits()"
     },
     {
@@ -2024,7 +2042,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L89",
       "id": "shared_dataclasses_usagedata_getmaxedlimits",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getmaxedlimits()"
     },
     {
@@ -2033,7 +2051,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L95",
       "id": "shared_dataclasses_usagedata_getbindingweeklylimit",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getbindingweeklylimit()"
     },
     {
@@ -2042,7 +2060,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L115",
       "id": "shared_dataclasses_usagedata_getsessionresetinfo",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getsessionresetinfo()"
     },
     {
@@ -2051,7 +2069,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L125",
       "id": "shared_dataclasses_usagedata_getextrausageremaining",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getextrausageremaining()"
     },
     {
@@ -2060,7 +2078,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L133",
       "id": "shared_dataclasses_usagedata_getextrausageeffectivetotal",
-      "community": 8,
+      "community": 7,
       "norm_label": ".getextrausageeffectivetotal()"
     },
     {
@@ -2069,7 +2087,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L140",
       "id": "shared_dataclasses_usagedata_hasextrausage",
-      "community": 8,
+      "community": 7,
       "norm_label": ".hasextrausage()"
     },
     {
@@ -2078,7 +2096,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L144",
       "id": "shared_dataclasses_usagedata_tojson",
-      "community": 8,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -2087,7 +2105,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L154",
       "id": "shared_dataclasses_usagedata_fromjson",
-      "community": 8,
+      "community": 7,
       "norm_label": ".fromjson()"
     },
     {
@@ -2096,7 +2114,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L159",
       "id": "shared_dataclasses_conversationdata",
-      "community": 1,
+      "community": 2,
       "norm_label": "conversationdata"
     },
     {
@@ -2105,7 +2123,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L160",
       "id": "shared_dataclasses_conversationdata_constructor",
-      "community": 1,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -2114,7 +2132,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L187",
       "id": "shared_dataclasses_conversationdata_iscurrentlycached",
-      "community": 1,
+      "community": 2,
       "norm_label": ".iscurrentlycached()"
     },
     {
@@ -2123,7 +2141,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L193",
       "id": "shared_dataclasses_conversationdata_gettimeuntilcacheexpires",
-      "community": 1,
+      "community": 2,
       "norm_label": ".gettimeuntilcacheexpires()"
     },
     {
@@ -2132,7 +2150,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L209",
       "id": "shared_dataclasses_conversationdata_getweightedcost",
-      "community": 1,
+      "community": 2,
       "norm_label": ".getweightedcost()"
     },
     {
@@ -2141,7 +2159,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L216",
       "id": "shared_dataclasses_conversationdata_getweightedfuturecost",
-      "community": 1,
+      "community": 2,
       "norm_label": ".getweightedfuturecost()"
     },
     {
@@ -2150,7 +2168,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L225",
       "id": "shared_dataclasses_conversationdata_isexpensive",
-      "community": 1,
+      "community": 2,
       "norm_label": ".isexpensive()"
     },
     {
@@ -2159,7 +2177,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L230",
       "id": "shared_dataclasses_conversationdata_islong",
-      "community": 1,
+      "community": 2,
       "norm_label": ".islong()"
     },
     {
@@ -2168,7 +2186,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L234",
       "id": "shared_dataclasses_conversationdata_tojson",
-      "community": 5,
+      "community": 2,
       "norm_label": ".tojson()"
     },
     {
@@ -2177,7 +2195,7 @@
       "source_file": "shared/dataclasses.js",
       "source_location": "L256",
       "id": "shared_dataclasses_conversationdata_fromjson",
-      "community": 1,
+      "community": 2,
       "norm_label": ".fromjson()"
     },
     {
@@ -2186,7 +2204,7 @@
       "source_file": "scripts/build-dataclasses.js",
       "source_location": "L1",
       "id": "scripts_build_dataclasses_js",
-      "community": 14,
+      "community": 13,
       "norm_label": "build-dataclasses.js"
     },
     {
@@ -2195,7 +2213,7 @@
       "source_file": "injections/rate-limit-watcher.js",
       "source_location": "L1",
       "id": "injections_rate_limit_watcher_js",
-      "community": 9,
+      "community": 8,
       "norm_label": "rate-limit-watcher.js"
     },
     {
@@ -2204,7 +2222,7 @@
       "source_file": "injections/rate-limit-watcher.js",
       "source_location": "L12",
       "id": "rate_limit_watcher_readstream",
-      "community": 9,
+      "community": 8,
       "norm_label": "readstream()"
     },
     {
@@ -2234,7 +2252,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "claude usage tracker extension",
       "id": "readme_claude_usage_tracker"
     },
@@ -2260,7 +2278,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "usage sources: files, projects, prefs, history, tools, mcps",
       "id": "readme_usage_sources"
     },
@@ -2273,7 +2291,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "manifest v3 + webrequest + polyfill stack",
       "id": "readme_manifest_v3_stack"
     },
@@ -2286,7 +2304,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "privacy: tokens, messages, reset time, org id only",
       "id": "privacy_minimal_data_policy"
     },
@@ -2299,7 +2317,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "firebase sync for cross-device usage",
       "id": "privacy_firebase_cross_device"
     },
@@ -2312,7 +2330,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "popup: help text for reload / authorize on claude.ai",
       "id": "popup_help_reload_authorize"
     },
@@ -2325,7 +2343,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "debug logs page (toolbar / context menu)",
       "id": "debug_logs_page"
     },
@@ -2338,7 +2356,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "patch notes: firefox containers, peak hours tz",
       "id": "patchnotes_recent_fixes"
     },
@@ -2351,7 +2369,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 9,
       "norm_label": "graph_report god nodes and surprising connections",
       "id": "graph_report_god_nodes_section"
     },
@@ -2364,7 +2382,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 9,
       "norm_label": "interactive force-directed graph html export",
       "id": "graph_html_force_graph_viz"
     },
@@ -2377,7 +2395,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "claude.ai chat with injected length/cost/cache/quota ui",
       "id": "ui_screenshot_extension_metrics"
     },
@@ -2390,7 +2408,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "ko-fi donation button asset",
       "id": "kofi_support_button"
     },
@@ -2403,7 +2421,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "claude qol cross-promotion badge",
       "id": "qol_cross_sell_badge"
     },
@@ -2416,7 +2434,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "extension icon 128px",
       "id": "icon128_manifest_asset"
     },
@@ -2429,7 +2447,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "extension icon 512px",
       "id": "icon512_manifest_asset"
     }
@@ -2442,9 +2460,9 @@
       "source_location": "L46",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_runonceinitialized",
+      "_tgt": "claude_usage_extension_background_runonceinitialized",
       "source": "background_js",
-      "target": "background_runonceinitialized",
+      "target": "claude_usage_extension_background_runonceinitialized",
       "confidence_score": 1.0
     },
     {
@@ -2454,261 +2472,285 @@
       "source_location": "L103",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_handlealarm",
+      "_tgt": "claude_usage_extension_background_handlealarm",
       "source": "background_js",
-      "target": "background_handlealarm",
+      "target": "claude_usage_extension_background_handlealarm",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L111",
+      "source_location": "L117",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_checkresetnotifications",
+      "_tgt": "claude_usage_extension_background_checkresetnotifications",
       "source": "background_js",
-      "target": "background_checkresetnotifications",
+      "target": "claude_usage_extension_background_checkresetnotifications",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L188",
+      "source_location": "L194",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_log",
+      "_tgt": "claude_usage_extension_background_log",
       "source": "background_js",
-      "target": "background_log",
+      "target": "claude_usage_extension_background_log",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L192",
+      "source_location": "L198",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_logerror",
+      "_tgt": "claude_usage_extension_background_logerror",
       "source": "background_js",
-      "target": "background_logerror",
+      "target": "claude_usage_extension_background_logerror",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L210",
+      "source_location": "L216",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_requestactiveorgid",
+      "_tgt": "claude_usage_extension_background_requestactiveorgid",
       "source": "background_js",
-      "target": "background_requestactiveorgid",
+      "target": "claude_usage_extension_background_requestactiveorgid",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L248",
+      "source_location": "L254",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_updatealltabswithusage",
+      "_tgt": "claude_usage_extension_background_updatealltabswithusage",
       "source": "background_js",
-      "target": "background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_updatealltabswithusage",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L272",
+      "source_location": "L289",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_updatetabwithconversationdata",
+      "_tgt": "claude_usage_extension_background_refreshusagefororg",
       "source": "background_js",
-      "target": "background_updatetabwithconversationdata",
+      "target": "claude_usage_extension_background_refreshusagefororg",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L316",
+      "source_location": "L314",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_opendebugpage",
+      "_tgt": "claude_usage_extension_background_scheduleusagerefreshalarm",
       "source": "background_js",
-      "target": "background_opendebugpage",
+      "target": "claude_usage_extension_background_scheduleusagerefreshalarm",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L326",
+      "source_location": "L330",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_requestdata",
+      "_tgt": "claude_usage_extension_background_updatetabwithconversationdata",
       "source": "background_js",
-      "target": "background_requestdata",
+      "target": "claude_usage_extension_background_updatetabwithconversationdata",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L375",
+      "source_location": "L374",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_interceptedrequest",
+      "_tgt": "claude_usage_extension_background_opendebugpage",
       "source": "background_js",
-      "target": "background_interceptedrequest",
+      "target": "claude_usage_extension_background_opendebugpage",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L385",
+      "source_location": "L384",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_interceptedresponse",
+      "_tgt": "claude_usage_extension_background_requestdata",
       "source": "background_js",
-      "target": "background_interceptedresponse",
+      "target": "claude_usage_extension_background_requestdata",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L395",
+      "source_location": "L433",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_gettotaltokenstracked",
+      "_tgt": "claude_usage_extension_background_interceptedrequest",
       "source": "background_js",
-      "target": "background_gettotaltokenstracked",
+      "target": "claude_usage_extension_background_interceptedrequest",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L401",
+      "source_location": "L443",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_handlemessagefromcontent",
+      "_tgt": "claude_usage_extension_background_interceptedresponse",
       "source": "background_js",
-      "target": "background_handlemessagefromcontent",
+      "target": "claude_usage_extension_background_interceptedresponse",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L409",
+      "source_location": "L453",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_parserequestbody",
+      "_tgt": "claude_usage_extension_background_gettotaltokenstracked",
       "source": "background_js",
-      "target": "background_parserequestbody",
+      "target": "claude_usage_extension_background_gettotaltokenstracked",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L440",
+      "source_location": "L459",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_processresponse",
+      "_tgt": "claude_usage_extension_background_handlemessagefromcontent",
       "source": "background_js",
-      "target": "background_processresponse",
+      "target": "claude_usage_extension_background_handlemessagefromcontent",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L518",
+      "source_location": "L467",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_debuglogmessagecost",
+      "_tgt": "claude_usage_extension_background_parserequestbody",
       "source": "background_js",
-      "target": "background_debuglogmessagecost",
+      "target": "claude_usage_extension_background_parserequestbody",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L569",
+      "source_location": "L498",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_logusagedelta",
+      "_tgt": "claude_usage_extension_background_processresponse",
       "source": "background_js",
-      "target": "background_logusagedelta",
+      "target": "claude_usage_extension_background_processresponse",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L599",
+      "source_location": "L576",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_scheduleresetnotifications",
+      "_tgt": "claude_usage_extension_background_debuglogmessagecost",
       "source": "background_js",
-      "target": "background_scheduleresetnotifications",
+      "target": "claude_usage_extension_background_debuglogmessagecost",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L619",
+      "source_location": "L627",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_onbeforerequesthandler",
+      "_tgt": "claude_usage_extension_background_logusagedelta",
       "source": "background_js",
-      "target": "background_onbeforerequesthandler",
+      "target": "claude_usage_extension_background_logusagedelta",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L694",
+      "source_location": "L657",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_oncompletedhandler",
+      "_tgt": "claude_usage_extension_background_scheduleresetnotifications",
       "source": "background_js",
-      "target": "background_oncompletedhandler",
+      "target": "claude_usage_extension_background_scheduleresetnotifications",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L732",
+      "source_location": "L677",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_processnexttask",
+      "_tgt": "claude_usage_extension_background_onbeforerequesthandler",
       "source": "background_js",
-      "target": "background_processnexttask",
+      "target": "claude_usage_extension_background_onbeforerequesthandler",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L764",
+      "source_location": "L752",
       "weight": 1.0,
       "_src": "background_js",
-      "_tgt": "background_electronusagepoll",
+      "_tgt": "claude_usage_extension_background_oncompletedhandler",
       "source": "background_js",
-      "target": "background_electronusagepoll",
+      "target": "claude_usage_extension_background_oncompletedhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L790",
+      "weight": 1.0,
+      "_src": "background_js",
+      "_tgt": "claude_usage_extension_background_processnexttask",
+      "source": "background_js",
+      "target": "claude_usage_extension_background_processnexttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L822",
+      "weight": 1.0,
+      "_src": "background_js",
+      "_tgt": "claude_usage_extension_background_electronusagepoll",
+      "source": "background_js",
+      "target": "claude_usage_extension_background_electronusagepoll",
       "confidence_score": 1.0
     },
     {
@@ -2717,10 +2759,10 @@
       "source_file": "background.js",
       "source_location": "L104",
       "weight": 1.0,
-      "_src": "background_handlealarm",
-      "_tgt": "background_log",
-      "source": "background_handlealarm",
-      "target": "background_log",
+      "_src": "claude_usage_extension_background_handlealarm",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_handlealarm",
+      "target": "claude_usage_extension_background_log",
       "confidence_score": 1.0
     },
     {
@@ -2729,34 +2771,46 @@
       "source_file": "background.js",
       "source_location": "L107",
       "weight": 1.0,
-      "_src": "background_handlealarm",
-      "_tgt": "background_checkresetnotifications",
-      "source": "background_handlealarm",
-      "target": "background_checkresetnotifications",
+      "_src": "claude_usage_extension_background_handlealarm",
+      "_tgt": "claude_usage_extension_background_checkresetnotifications",
+      "source": "claude_usage_extension_background_handlealarm",
+      "target": "claude_usage_extension_background_checkresetnotifications",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L141",
+      "source_location": "L113",
       "weight": 1.0,
-      "_src": "background_checkresetnotifications",
-      "_tgt": "background_requestactiveorgid",
-      "source": "background_checkresetnotifications",
-      "target": "background_requestactiveorgid",
+      "_src": "claude_usage_extension_background_handlealarm",
+      "_tgt": "claude_usage_extension_background_refreshusagefororg",
+      "source": "claude_usage_extension_background_handlealarm",
+      "target": "claude_usage_extension_background_refreshusagefororg",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L151",
+      "source_location": "L147",
       "weight": 1.0,
-      "_src": "background_checkresetnotifications",
-      "_tgt": "background_log",
-      "source": "background_checkresetnotifications",
-      "target": "background_log",
+      "_src": "claude_usage_extension_background_checkresetnotifications",
+      "_tgt": "claude_usage_extension_background_requestactiveorgid",
+      "source": "claude_usage_extension_background_checkresetnotifications",
+      "target": "claude_usage_extension_background_requestactiveorgid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_checkresetnotifications",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_checkresetnotifications",
+      "target": "claude_usage_extension_background_log",
       "confidence_score": 1.0
     },
     {
@@ -2764,11 +2818,11 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L112",
+      "source_location": "L117",
       "weight": 1.0,
-      "_src": "background_checkresetnotifications",
+      "_src": "claude_usage_extension_background_checkresetnotifications",
       "_tgt": "bg_components_utils_getstoragevalue",
-      "source": "background_checkresetnotifications",
+      "source": "claude_usage_extension_background_checkresetnotifications",
       "target": "bg_components_utils_getstoragevalue"
     },
     {
@@ -2776,215 +2830,203 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L115",
+      "source_location": "L165",
       "weight": 1.0,
-      "_src": "background_checkresetnotifications",
-      "_tgt": "bg_components_utils_storedmap_entries",
-      "source": "background_checkresetnotifications",
-      "target": "bg_components_utils_storedmap_entries"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L127",
-      "weight": 1.0,
-      "_src": "background_checkresetnotifications",
-      "_tgt": "bg_components_utils_storedmap_delete",
-      "source": "background_checkresetnotifications",
-      "target": "bg_components_utils_storedmap_delete"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L143",
-      "weight": 1.0,
-      "_src": "background_checkresetnotifications",
-      "_tgt": "claude_api_claudeapi_getusagedata",
-      "source": "background_checkresetnotifications",
-      "target": "claude_api_claudeapi_getusagedata"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L160",
-      "weight": 1.0,
-      "_src": "background_checkresetnotifications",
+      "_src": "claude_usage_extension_background_checkresetnotifications",
       "_tgt": "electron_compat_createnotification",
-      "source": "background_checkresetnotifications",
+      "source": "claude_usage_extension_background_checkresetnotifications",
       "target": "electron_compat_createnotification"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L195",
+      "source_location": "L201",
       "weight": 1.0,
-      "_src": "background_logerror",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_logerror",
+      "_src": "claude_usage_extension_background_logerror",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_logerror",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L226",
+      "source_location": "L232",
       "weight": 1.0,
-      "_src": "background_requestactiveorgid",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_requestactiveorgid",
+      "_src": "claude_usage_extension_background_requestactiveorgid",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_requestactiveorgid",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L249",
+      "source_location": "L255",
       "weight": 1.0,
-      "_src": "background_updatealltabswithusage",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_updatealltabswithusage",
+      "_src": "claude_usage_extension_background_updatealltabswithusage",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_updatealltabswithusage",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L273",
+      "source_location": "L304",
       "weight": 1.0,
-      "_src": "background_updatetabwithconversationdata",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_updatetabwithconversationdata",
+      "_src": "claude_usage_extension_background_refreshusagefororg",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_refreshusagefororg",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L340",
+      "source_location": "L326",
       "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_requestdata",
+      "_src": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_scheduleusagerefreshalarm",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L376",
+      "source_location": "L331",
       "weight": 1.0,
-      "_src": "background_interceptedrequest",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_interceptedrequest",
+      "_src": "claude_usage_extension_background_updatetabwithconversationdata",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_updatetabwithconversationdata",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L386",
+      "source_location": "L398",
       "weight": 1.0,
-      "_src": "background_interceptedresponse",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_interceptedresponse",
+      "_src": "claude_usage_extension_background_requestdata",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_requestdata",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L443",
+      "source_location": "L434",
       "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_processresponse",
+      "_src": "claude_usage_extension_background_interceptedrequest",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_interceptedrequest",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L557",
+      "source_location": "L444",
       "weight": 1.0,
-      "_src": "background_debuglogmessagecost",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_debuglogmessagecost",
+      "_src": "claude_usage_extension_background_interceptedresponse",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_interceptedresponse",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L595",
+      "source_location": "L501",
       "weight": 1.0,
-      "_src": "background_logusagedelta",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_logusagedelta",
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_processresponse",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L613",
+      "source_location": "L615",
       "weight": 1.0,
-      "_src": "background_scheduleresetnotifications",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_scheduleresetnotifications",
+      "_src": "claude_usage_extension_background_debuglogmessagecost",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_debuglogmessagecost",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L620",
+      "source_location": "L653",
       "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_onbeforerequesthandler",
+      "_src": "claude_usage_extension_background_logusagedelta",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_logusagedelta",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L740",
+      "source_location": "L671",
       "weight": 1.0,
-      "_src": "background_processnexttask",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_processnexttask",
+      "_src": "claude_usage_extension_background_scheduleresetnotifications",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_scheduleresetnotifications",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L768",
+      "source_location": "L678",
       "weight": 1.0,
-      "_src": "background_electronusagepoll",
-      "_tgt": "background_log",
-      "source": "background_log",
-      "target": "background_electronusagepoll",
+      "_src": "claude_usage_extension_background_onbeforerequesthandler",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_onbeforerequesthandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L798",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_processnexttask",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_processnexttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L826",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_electronusagepoll",
+      "_tgt": "claude_usage_extension_background_log",
+      "source": "claude_usage_extension_background_log",
+      "target": "claude_usage_extension_background_electronusagepoll",
       "confidence_score": 1.0
     },
     {
@@ -2992,35 +3034,47 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L189",
+      "source_location": "L194",
       "weight": 1.0,
-      "_src": "background_log",
+      "_src": "claude_usage_extension_background_log",
       "_tgt": "bg_components_utils_rawlog",
-      "source": "background_log",
+      "source": "claude_usage_extension_background_log",
       "target": "bg_components_utils_rawlog"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L257",
+      "source_location": "L270",
       "weight": 1.0,
-      "_src": "background_updatealltabswithusage",
-      "_tgt": "background_requestactiveorgid",
-      "source": "background_requestactiveorgid",
-      "target": "background_updatealltabswithusage",
+      "_src": "claude_usage_extension_background_updatealltabswithusage",
+      "_tgt": "claude_usage_extension_background_requestactiveorgid",
+      "source": "claude_usage_extension_background_requestactiveorgid",
+      "target": "claude_usage_extension_background_updatealltabswithusage",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L687",
+      "source_location": "L296",
       "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "background_requestactiveorgid",
-      "source": "background_requestactiveorgid",
-      "target": "background_onbeforerequesthandler",
+      "_src": "claude_usage_extension_background_refreshusagefororg",
+      "_tgt": "claude_usage_extension_background_requestactiveorgid",
+      "source": "claude_usage_extension_background_requestactiveorgid",
+      "target": "claude_usage_extension_background_refreshusagefororg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L745",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_onbeforerequesthandler",
+      "_tgt": "claude_usage_extension_background_requestactiveorgid",
+      "source": "claude_usage_extension_background_requestactiveorgid",
+      "target": "claude_usage_extension_background_onbeforerequesthandler",
       "confidence_score": 1.0
     },
     {
@@ -3028,119 +3082,95 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L212",
+      "source_location": "L237",
       "weight": 1.0,
-      "_src": "background_requestactiveorgid",
-      "_tgt": "bg_components_utils_storedmap_get",
-      "source": "background_requestactiveorgid",
-      "target": "bg_components_utils_storedmap_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L232",
-      "weight": 1.0,
-      "_src": "background_requestactiveorgid",
+      "_src": "claude_usage_extension_background_requestactiveorgid",
       "_tgt": "bg_components_utils_sendtabmessage",
-      "source": "background_requestactiveorgid",
+      "source": "claude_usage_extension_background_requestactiveorgid",
       "target": "bg_components_utils_sendtabmessage"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "background.js",
-      "source_location": "L334",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "background_updatealltabswithusage",
-      "source": "background_updatealltabswithusage",
-      "target": "background_requestdata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "background.js",
-      "source_location": "L510",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_updatealltabswithusage",
-      "source": "background_updatealltabswithusage",
-      "target": "background_processresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "background.js",
-      "source_location": "L769",
-      "weight": 1.0,
-      "_src": "background_electronusagepoll",
-      "_tgt": "background_updatealltabswithusage",
-      "source": "background_updatealltabswithusage",
-      "target": "background_electronusagepoll",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "background.js",
       "source_location": "L259",
       "weight": 1.0,
-      "_src": "background_updatealltabswithusage",
-      "_tgt": "claude_api_claudeapi_getusagedata",
-      "source": "background_updatealltabswithusage",
-      "target": "claude_api_claudeapi_getusagedata"
+      "_src": "claude_usage_extension_background_updatealltabswithusage",
+      "_tgt": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_refreshusagefororg",
+      "_tgt": "claude_usage_extension_background_updatealltabswithusage",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_refreshusagefororg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L392",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_requestdata",
+      "_tgt": "claude_usage_extension_background_updatealltabswithusage",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_requestdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L568",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_updatealltabswithusage",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_processresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L827",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_electronusagepoll",
+      "_tgt": "claude_usage_extension_background_updatealltabswithusage",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
+      "target": "claude_usage_extension_background_electronusagepoll",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L262",
+      "source_location": "L279",
       "weight": 1.0,
-      "_src": "background_updatealltabswithusage",
+      "_src": "claude_usage_extension_background_updatealltabswithusage",
       "_tgt": "bg_components_utils_sendtabmessage",
-      "source": "background_updatealltabswithusage",
+      "source": "claude_usage_extension_background_updatealltabswithusage",
       "target": "bg_components_utils_sendtabmessage"
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L265",
-      "weight": 1.0,
-      "_src": "background_updatealltabswithusage",
-      "_tgt": "shared_dataclasses_conversationdata_tojson",
-      "source": "background_updatealltabswithusage",
-      "target": "shared_dataclasses_conversationdata_tojson"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L365",
+      "source_location": "L310",
       "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "background_updatetabwithconversationdata",
-      "source": "background_updatetabwithconversationdata",
-      "target": "background_requestdata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "background.js",
-      "source_location": "L511",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_updatetabwithconversationdata",
-      "source": "background_updatetabwithconversationdata",
-      "target": "background_processresponse",
+      "_src": "claude_usage_extension_background_refreshusagefororg",
+      "_tgt": "claude_usage_extension_background_scheduleresetnotifications",
+      "source": "claude_usage_extension_background_refreshusagefororg",
+      "target": "claude_usage_extension_background_scheduleresetnotifications",
       "confidence_score": 1.0
     },
     {
@@ -3148,35 +3178,71 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L275",
+      "source_location": "L295",
       "weight": 1.0,
-      "_src": "background_updatetabwithconversationdata",
+      "_src": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "_tgt": "electron_compat_clearalarm",
+      "source": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "target": "electron_compat_clearalarm"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "background.js",
+      "source_location": "L299",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "_tgt": "electron_compat_schedulealarm",
+      "source": "claude_usage_extension_background_scheduleusagerefreshalarm",
+      "target": "electron_compat_schedulealarm"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L423",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_requestdata",
+      "_tgt": "claude_usage_extension_background_updatetabwithconversationdata",
+      "source": "claude_usage_extension_background_updatetabwithconversationdata",
+      "target": "claude_usage_extension_background_requestdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "background.js",
+      "source_location": "L569",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_updatetabwithconversationdata",
+      "source": "claude_usage_extension_background_updatetabwithconversationdata",
+      "target": "claude_usage_extension_background_processresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "background.js",
+      "source_location": "L307",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_updatetabwithconversationdata",
       "_tgt": "bg_components_utils_sendtabmessage",
-      "source": "background_updatetabwithconversationdata",
+      "source": "claude_usage_extension_background_updatetabwithconversationdata",
       "target": "bg_components_utils_sendtabmessage"
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L278",
-      "weight": 1.0,
-      "_src": "background_updatetabwithconversationdata",
-      "_tgt": "shared_dataclasses_conversationdata_tojson",
-      "source": "background_updatetabwithconversationdata",
-      "target": "shared_dataclasses_conversationdata_tojson"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L333",
+      "source_location": "L391",
       "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "background_scheduleresetnotifications",
-      "source": "background_requestdata",
-      "target": "background_scheduleresetnotifications",
+      "_src": "claude_usage_extension_background_requestdata",
+      "_tgt": "claude_usage_extension_background_scheduleresetnotifications",
+      "source": "claude_usage_extension_background_requestdata",
+      "target": "claude_usage_extension_background_scheduleresetnotifications",
       "confidence_score": 1.0
     },
     {
@@ -3184,312 +3250,84 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "background.js",
-      "source_location": "L332",
+      "source_location": "L381",
       "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "claude_api_claudeapi_getusagedata",
-      "source": "background_requestdata",
-      "target": "claude_api_claudeapi_getusagedata"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L338",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "bg_components_utils_storedmap_get",
-      "source": "background_requestdata",
-      "target": "bg_components_utils_storedmap_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L349",
-      "weight": 1.0,
-      "_src": "background_requestdata",
+      "_src": "claude_usage_extension_background_requestdata",
       "_tgt": "bg_components_utils_sendtabmessage",
-      "source": "background_requestdata",
+      "source": "claude_usage_extension_background_requestdata",
       "target": "bg_components_utils_sendtabmessage"
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L355",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "claude_api_claudeapi_getconversation",
-      "source": "background_requestdata",
-      "target": "claude_api_claudeapi_getconversation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L356",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "claude_api_conversationapi_getinfo",
-      "source": "background_requestdata",
-      "target": "claude_api_conversationapi_getinfo"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L357",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "claude_api_claudeapi_getprofiletokens",
-      "source": "background_requestdata",
-      "target": "claude_api_claudeapi_getprofiletokens"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L364",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "bg_components_utils_storedmap_set",
-      "source": "background_requestdata",
-      "target": "bg_components_utils_storedmap_set"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L364",
-      "weight": 1.0,
-      "_src": "background_requestdata",
-      "_tgt": "shared_dataclasses_conversationdata_tojson",
-      "source": "background_requestdata",
-      "target": "shared_dataclasses_conversationdata_tojson"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L380",
+      "source_location": "L438",
       "weight": 1.0,
-      "_src": "background_interceptedrequest",
-      "_tgt": "background_onbeforerequesthandler",
-      "source": "background_interceptedrequest",
-      "target": "background_onbeforerequesthandler",
+      "_src": "claude_usage_extension_background_interceptedrequest",
+      "_tgt": "claude_usage_extension_background_onbeforerequesthandler",
+      "source": "claude_usage_extension_background_interceptedrequest",
+      "target": "claude_usage_extension_background_onbeforerequesthandler",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L390",
+      "source_location": "L448",
       "weight": 1.0,
-      "_src": "background_interceptedresponse",
-      "_tgt": "background_oncompletedhandler",
-      "source": "background_interceptedresponse",
-      "target": "background_oncompletedhandler",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L402",
-      "weight": 1.0,
-      "_src": "background_handlemessagefromcontent",
-      "_tgt": "bg_components_utils_messagehandlerregistry_handle",
-      "source": "background_handlemessagefromcontent",
-      "target": "bg_components_utils_messagehandlerregistry_handle"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "background.js",
-      "source_location": "L625",
-      "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "background_parserequestbody",
-      "source": "background_parserequestbody",
-      "target": "background_onbeforerequesthandler",
+      "_src": "claude_usage_extension_background_interceptedresponse",
+      "_tgt": "claude_usage_extension_background_oncompletedhandler",
+      "source": "claude_usage_extension_background_interceptedresponse",
+      "target": "claude_usage_extension_background_oncompletedhandler",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L497",
+      "source_location": "L683",
       "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_logusagedelta",
-      "source": "background_processresponse",
-      "target": "background_logusagedelta",
+      "_src": "claude_usage_extension_background_onbeforerequesthandler",
+      "_tgt": "claude_usage_extension_background_parserequestbody",
+      "source": "claude_usage_extension_background_parserequestbody",
+      "target": "claude_usage_extension_background_onbeforerequesthandler",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L503",
+      "source_location": "L555",
       "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_debuglogmessagecost",
-      "source": "background_processresponse",
-      "target": "background_debuglogmessagecost",
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_logusagedelta",
+      "source": "claude_usage_extension_background_processresponse",
+      "target": "claude_usage_extension_background_logusagedelta",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L507",
+      "source_location": "L561",
       "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "background_scheduleresetnotifications",
-      "source": "background_processresponse",
-      "target": "background_scheduleresetnotifications",
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_debuglogmessagecost",
+      "source": "claude_usage_extension_background_processresponse",
+      "target": "claude_usage_extension_background_debuglogmessagecost",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L445",
+      "source_location": "L565",
       "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "bg_components_utils_storedmap_get",
-      "source": "background_processresponse",
-      "target": "bg_components_utils_storedmap_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L450",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "claude_api_claudeapi_getusagedata",
-      "source": "background_processresponse",
-      "target": "claude_api_claudeapi_getusagedata"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L453",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "claude_api_claudeapi_getconversation",
-      "source": "background_processresponse",
-      "target": "claude_api_claudeapi_getconversation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L454",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "claude_api_conversationapi_getinfo",
-      "source": "background_processresponse",
-      "target": "claude_api_conversationapi_getinfo"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L463",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "claude_api_claudeapi_getprofiletokens",
-      "source": "background_processresponse",
-      "target": "claude_api_claudeapi_getprofiletokens"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L466",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "claude_api_claudeapi_getstyletokens",
-      "source": "background_processresponse",
-      "target": "claude_api_claudeapi_getstyletokens"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L496",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "shared_dataclasses_conversationdata_fromjson",
-      "source": "background_processresponse",
-      "target": "shared_dataclasses_conversationdata_fromjson"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L513",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "bg_components_utils_storedmap_set",
-      "source": "background_processresponse",
-      "target": "bg_components_utils_storedmap_set"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L513",
-      "weight": 1.0,
-      "_src": "background_processresponse",
-      "_tgt": "shared_dataclasses_conversationdata_tojson",
-      "source": "background_processresponse",
-      "target": "shared_dataclasses_conversationdata_tojson"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L528",
-      "weight": 1.0,
-      "_src": "background_debuglogmessagecost",
-      "_tgt": "bg_components_utils_storedmap_entries",
-      "source": "background_debuglogmessagecost",
-      "target": "bg_components_utils_storedmap_entries"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L533",
-      "weight": 1.0,
-      "_src": "background_debuglogmessagecost",
-      "_tgt": "bg_components_utils_getstoragevalue",
-      "source": "background_debuglogmessagecost",
-      "target": "bg_components_utils_getstoragevalue"
+      "_src": "claude_usage_extension_background_processresponse",
+      "_tgt": "claude_usage_extension_background_scheduleresetnotifications",
+      "source": "claude_usage_extension_background_processresponse",
+      "target": "claude_usage_extension_background_scheduleresetnotifications",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3498,117 +3336,33 @@
       "source_file": "background.js",
       "source_location": "L565",
       "weight": 1.0,
-      "_src": "background_debuglogmessagecost",
+      "_src": "claude_usage_extension_background_debuglogmessagecost",
+      "_tgt": "bg_components_utils_getstoragevalue",
+      "source": "claude_usage_extension_background_debuglogmessagecost",
+      "target": "bg_components_utils_getstoragevalue"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "background.js",
+      "source_location": "L597",
+      "weight": 1.0,
+      "_src": "claude_usage_extension_background_debuglogmessagecost",
       "_tgt": "bg_components_utils_setstoragevalue",
-      "source": "background_debuglogmessagecost",
+      "source": "claude_usage_extension_background_debuglogmessagecost",
       "target": "bg_components_utils_setstoragevalue"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L572",
-      "weight": 1.0,
-      "_src": "background_logusagedelta",
-      "_tgt": "bg_components_utils_storedmap_entries",
-      "source": "background_logusagedelta",
-      "target": "bg_components_utils_storedmap_entries"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L600",
-      "weight": 1.0,
-      "_src": "background_scheduleresetnotifications",
-      "_tgt": "shared_dataclasses_usagedata_getmaxedlimits",
-      "source": "background_scheduleresetnotifications",
-      "target": "shared_dataclasses_usagedata_getmaxedlimits"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L608",
-      "weight": 1.0,
-      "_src": "background_scheduleresetnotifications",
-      "_tgt": "bg_components_utils_storedmap_has",
-      "source": "background_scheduleresetnotifications",
-      "target": "bg_components_utils_storedmap_has"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L611",
-      "weight": 1.0,
-      "_src": "background_scheduleresetnotifications",
-      "_tgt": "bg_components_utils_storedmap_set",
-      "source": "background_scheduleresetnotifications",
-      "target": "bg_components_utils_storedmap_set"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L664",
-      "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "claude_api_claudeapi_getusagedata",
-      "source": "background_onbeforerequesthandler",
-      "target": "claude_api_claudeapi_getusagedata"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L665",
-      "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "shared_dataclasses_conversationdata_tojson",
-      "source": "background_onbeforerequesthandler",
-      "target": "shared_dataclasses_conversationdata_tojson"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L672",
-      "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "bg_components_utils_storedmap_set",
-      "source": "background_onbeforerequesthandler",
-      "target": "bg_components_utils_storedmap_set"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "background.js",
-      "source_location": "L689",
-      "weight": 1.0,
-      "_src": "background_onbeforerequesthandler",
-      "_tgt": "claude_api_claudeapi_getsubscriptiontier",
-      "source": "background_onbeforerequesthandler",
-      "target": "claude_api_claudeapi_getsubscriptiontier"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "background.js",
-      "source_location": "L714",
+      "source_location": "L772",
       "weight": 1.0,
-      "_src": "background_oncompletedhandler",
-      "_tgt": "background_processnexttask",
-      "source": "background_oncompletedhandler",
-      "target": "background_processnexttask",
+      "_src": "claude_usage_extension_background_oncompletedhandler",
+      "_tgt": "claude_usage_extension_background_processnexttask",
+      "source": "claude_usage_extension_background_oncompletedhandler",
+      "target": "claude_usage_extension_background_processnexttask",
       "confidence_score": 1.0
     },
     {

@@ -4,7 +4,7 @@ import { CONFIG, isElectron, sleep, RawLog, FORCE_DEBUG, containerFetch, addCont
 import { tokenStorageManager, tokenCounter } from './bg-components/tokenManagement.js';
 import { ClaudeAPI, ConversationAPI } from './bg-components/claude-api.js';
 import { UsageData } from './shared/dataclasses.js';
-import { scheduleAlarm, getAlarm, createNotification } from './bg-components/electron-compat.js';
+import { scheduleAlarm, getAlarm, clearAlarm, createNotification } from './bg-components/electron-compat.js';
 
 const INTERCEPT_PATTERNS = {
 	onBeforeRequest: {
@@ -105,6 +105,12 @@ async function handleAlarm(alarmName) {
 
 	if (alarmName === 'checkResetNotifications') {
 		await checkResetNotifications();
+		return;
+	}
+
+	if (alarmName.startsWith('refreshUsage_')) {
+		const orgId = alarmName.replace('refreshUsage_', '');
+		await refreshUsageForOrg(orgId);
 	}
 }
 
@@ -247,6 +253,13 @@ async function requestActiveOrgId(tab) {
 // Updates all tabs with usage data only
 async function updateAllTabsWithUsage(usageData = null) {
 	await Log("Updating all tabs with usage data");
+	const scheduledRefreshOrgIds = new Set();
+
+	if (usageData?.orgId) {
+		await scheduleUsageRefreshAlarm(usageData.orgId, usageData);
+		scheduledRefreshOrgIds.add(usageData.orgId);
+	}
+
 	const tabs = await browser.tabs.query({ url: "*://claude.ai/*" });
 
 	for (const tab of tabs) {
@@ -259,6 +272,11 @@ async function updateAllTabsWithUsage(usageData = null) {
 			data = await api.getUsageData();
 		}
 
+		if (data?.orgId && !scheduledRefreshOrgIds.has(data.orgId)) {
+			await scheduleUsageRefreshAlarm(data.orgId, data);
+			scheduledRefreshOrgIds.add(data.orgId);
+		}
+
 		sendTabMessage(tab.id, {
 			type: 'updateUsage',
 			data: {
@@ -266,6 +284,46 @@ async function updateAllTabsWithUsage(usageData = null) {
 			}
 		});
 	}
+}
+
+async function refreshUsageForOrg(orgId) {
+	if (!orgId) return;
+
+	const tabs = await browser.tabs.query({ url: "*://claude.ai/*" });
+	let matchingTab = null;
+
+	for (const candidate of tabs) {
+		const candidateOrgId = await requestActiveOrgId(candidate);
+		if (candidateOrgId === orgId) {
+			matchingTab = candidate;
+			break;
+		}
+	}
+
+	if (!matchingTab) {
+		await Log(`No live tab found for usage refresh alarm: ${orgId}`);
+		return;
+	}
+
+	const api = new ClaudeAPI(matchingTab.cookieStoreId, orgId);
+	const usageData = await api.getUsageData();
+	await scheduleResetNotifications(orgId, usageData);
+	await updateAllTabsWithUsage(usageData);
+}
+
+async function scheduleUsageRefreshAlarm(orgId, usageData) {
+	if (!orgId || !usageData) return;
+
+	const sessionLimit = usageData.limits?.session;
+	const alarmName = `refreshUsage_${orgId}`;
+
+	if (!sessionLimit?.resetsAt || sessionLimit.resetsAt <= Date.now()) {
+		await clearAlarm(alarmName);
+		return;
+	}
+
+	await scheduleAlarm(alarmName, { when: sessionLimit.resetsAt });
+	await Log(`Scheduled usage refresh alarm for ${orgId} at ${new Date(sessionLimit.resetsAt).toISOString()}`);
 }
 
 // Updates a specific tab with conversation metrics
